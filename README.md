@@ -2,7 +2,7 @@
 
 OMDB Client prototype SwiftUI app built with Xcode 11.
 <br/>
-This app cosumes https://www.omdbapi.com/.
+This app consumes https://www.omdbapi.com/.
 
 ## Requirements
 - macOS 10.15 Catalina
