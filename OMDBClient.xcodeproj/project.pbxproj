@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F4DA3B524981CA000E403DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4DA3B424981CA000E403DC /* AppDelegate.swift */; };
+		4F4DA3B724981CA000E403DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4DA3B624981CA000E403DC /* SceneDelegate.swift */; };
+		4F4DA3B924981CA000E403DC /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4DA3B824981CA000E403DC /* LaunchView.swift */; };
+		4F4DA3BB24981CA300E403DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4DA3BA24981CA300E403DC /* Assets.xcassets */; };
+		4F4DA3BE24981CA300E403DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4DA3BD24981CA300E403DC /* Preview Assets.xcassets */; };
+		4F4DA3C124981CA300E403DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4DA3BF24981CA300E403DC /* LaunchScreen.storyboard */; };
+		4F4DA3CA24981FF400E403DC /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4DA3C924981FF400E403DC /* ActivityIndicator.swift */; };
+		4F4DA3D024982A7900E403DC /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4DA3CF24982A7900E403DC /* NetworkHelper.swift */; };
+		4F4DA3D42498338000E403DC /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4DA3D32498338000E403DC /* SearchBar.swift */; };
+		4F4DA3D62498351900E403DC /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4DA3D52498351900E403DC /* MovieListView.swift */; };
+		4F4DA3D824983EA800E403DC /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4DA3D724983EA800E403DC /* MovieDetailView.swift */; };
+		4F4DA3DA2498424000E403DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F4DA3D92498424000E403DC /* GoogleService-Info.plist */; };
+		4F4DA3DD2498438B00E403DC /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4DA3DC2498438B00E403DC /* Movie.swift */; };
+		4F4DA3F9249845D100E403DC /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4DA3F8249845D100E403DC /* FirebaseService.swift */; };
+		4F4DA3FB249853AE00E403DC /* OmdbApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4DA3FA249853AE00E403DC /* OmdbApiService.swift */; };
+		9778CCCC81E254EA2E9D6B61 /* Pods_OMDBClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54754E7A41CCF8F1F42FEF3E /* Pods_OMDBClient.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4F4DA4002498714000E403DC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D5E35141BC423F8A0BF0686 /* Pods-OMDBClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMDBClient.debug.xcconfig"; path = "Target Support Files/Pods-OMDBClient/Pods-OMDBClient.debug.xcconfig"; sourceTree = "<group>"; };
+		4F4DA3B124981C9F00E403DC /* OMDB Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OMDB Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F4DA3B424981CA000E403DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4F4DA3B624981CA000E403DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4F4DA3B824981CA000E403DC /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		4F4DA3BA24981CA300E403DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F4DA3BD24981CA300E403DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F4DA3C024981CA300E403DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4F4DA3C224981CA300E403DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F4DA3C924981FF400E403DC /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		4F4DA3CF24982A7900E403DC /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		4F4DA3D32498338000E403DC /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		4F4DA3D52498351900E403DC /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
+		4F4DA3D724983EA800E403DC /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		4F4DA3D92498424000E403DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F4DA3DC2498438B00E403DC /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		4F4DA3F8249845D100E403DC /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		4F4DA3FA249853AE00E403DC /* OmdbApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmdbApiService.swift; sourceTree = "<group>"; };
+		54754E7A41CCF8F1F42FEF3E /* Pods_OMDBClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OMDBClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA7E9DC6A51C480DAE85A533 /* Pods-OMDBClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMDBClient.release.xcconfig"; path = "Target Support Files/Pods-OMDBClient/Pods-OMDBClient.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F4DA3AE24981C9F00E403DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9778CCCC81E254EA2E9D6B61 /* Pods_OMDBClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36E436EE5D065C343E8B9A8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D5E35141BC423F8A0BF0686 /* Pods-OMDBClient.debug.xcconfig */,
+				BA7E9DC6A51C480DAE85A533 /* Pods-OMDBClient.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4F4DA3A824981C9F00E403DC = {
+			isa = PBXGroup;
+			children = (
+				4F4DA3B324981CA000E403DC /* OMDBClient */,
+				4F4DA3B224981C9F00E403DC /* Products */,
+				36E436EE5D065C343E8B9A8A /* Pods */,
+				5FF671EC4D46CE4F91FA4D6E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4F4DA3B224981C9F00E403DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F4DA3B124981C9F00E403DC /* OMDB Client.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F4DA3B324981CA000E403DC /* OMDBClient */ = {
+			isa = PBXGroup;
+			children = (
+				4F4DA3F7249845BF00E403DC /* Services */,
+				4F4DA3DB2498437800E403DC /* Models */,
+				4F4DA3CB249820F700E403DC /* Views */,
+				4F4DA3C824981FCF00E403DC /* Components */,
+				4F4DA3B424981CA000E403DC /* AppDelegate.swift */,
+				4F4DA3B624981CA000E403DC /* SceneDelegate.swift */,
+				4F4DA3BA24981CA300E403DC /* Assets.xcassets */,
+				4F4DA3BF24981CA300E403DC /* LaunchScreen.storyboard */,
+				4F4DA3C224981CA300E403DC /* Info.plist */,
+				4F4DA3D92498424000E403DC /* GoogleService-Info.plist */,
+				4F4DA3D22498327E00E403DC /* Helpers */,
+				4F4DA3BC24981CA300E403DC /* Preview Content */,
+			);
+			path = OMDBClient;
+			sourceTree = "<group>";
+		};
+		4F4DA3BC24981CA300E403DC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4F4DA3BD24981CA300E403DC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4F4DA3C824981FCF00E403DC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4F4DA3C924981FF400E403DC /* ActivityIndicator.swift */,
+				4F4DA3D32498338000E403DC /* SearchBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4F4DA3CB249820F700E403DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4F4DA3B824981CA000E403DC /* LaunchView.swift */,
+				4F4DA3D52498351900E403DC /* MovieListView.swift */,
+				4F4DA3D724983EA800E403DC /* MovieDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4F4DA3D22498327E00E403DC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4F4DA3CF24982A7900E403DC /* NetworkHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4F4DA3DB2498437800E403DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4F4DA3DC2498438B00E403DC /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4F4DA3F7249845BF00E403DC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4F4DA3F8249845D100E403DC /* FirebaseService.swift */,
+				4F4DA3FA249853AE00E403DC /* OmdbApiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5FF671EC4D46CE4F91FA4D6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54754E7A41CCF8F1F42FEF3E /* Pods_OMDBClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F4DA3B024981C9F00E403DC /* OMDBClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F4DA3C524981CA300E403DC /* Build configuration list for PBXNativeTarget "OMDBClient" */;
+			buildPhases = (
+				303867CA8EF1453BF34511D4 /* [CP] Check Pods Manifest.lock */,
+				4F4DA3AD24981C9F00E403DC /* Sources */,
+				4F4DA3AE24981C9F00E403DC /* Frameworks */,
+				4F4DA3AF24981C9F00E403DC /* Resources */,
+				ABAC9D30474D27CA01269BC7 /* [CP] Embed Pods Frameworks */,
+				4F4DA4002498714000E403DC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OMDBClient;
+			packageProductDependencies = (
+			);
+			productName = OMDBClient;
+			productReference = 4F4DA3B124981C9F00E403DC /* OMDB Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F4DA3A924981C9F00E403DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = sahiny;
+				TargetAttributes = {
+					4F4DA3B024981C9F00E403DC = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 4F4DA3AC24981C9F00E403DC /* Build configuration list for PBXProject "OMDBClient" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F4DA3A824981C9F00E403DC;
+			packageReferences = (
+			);
+			productRefGroup = 4F4DA3B224981C9F00E403DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F4DA3B024981C9F00E403DC /* OMDBClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F4DA3AF24981C9F00E403DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F4DA3C124981CA300E403DC /* LaunchScreen.storyboard in Resources */,
+				4F4DA3DA2498424000E403DC /* GoogleService-Info.plist in Resources */,
+				4F4DA3BE24981CA300E403DC /* Preview Assets.xcassets in Resources */,
+				4F4DA3BB24981CA300E403DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		303867CA8EF1453BF34511D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OMDBClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABAC9D30474D27CA01269BC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OMDBClient/Pods-OMDBClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OMDBClient/Pods-OMDBClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OMDBClient/Pods-OMDBClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F4DA3AD24981C9F00E403DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F4DA3FB249853AE00E403DC /* OmdbApiService.swift in Sources */,
+				4F4DA3CA24981FF400E403DC /* ActivityIndicator.swift in Sources */,
+				4F4DA3D62498351900E403DC /* MovieListView.swift in Sources */,
+				4F4DA3DD2498438B00E403DC /* Movie.swift in Sources */,
+				4F4DA3B524981CA000E403DC /* AppDelegate.swift in Sources */,
+				4F4DA3D024982A7900E403DC /* NetworkHelper.swift in Sources */,
+				4F4DA3B724981CA000E403DC /* SceneDelegate.swift in Sources */,
+				4F4DA3F9249845D100E403DC /* FirebaseService.swift in Sources */,
+				4F4DA3B924981CA000E403DC /* LaunchView.swift in Sources */,
+				4F4DA3D824983EA800E403DC /* MovieDetailView.swift in Sources */,
+				4F4DA3D42498338000E403DC /* SearchBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4F4DA3BF24981CA300E403DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F4DA3C024981CA300E403DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F4DA3C324981CA300E403DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F4DA3C424981CA300E403DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F4DA3C624981CA300E403DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D5E35141BC423F8A0BF0686 /* Pods-OMDBClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OMDBClient/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OMDBClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahiny.OMDBClient;
+				PRODUCT_NAME = "OMDB Client";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F4DA3C724981CA300E403DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA7E9DC6A51C480DAE85A533 /* Pods-OMDBClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OMDBClient/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OMDBClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahiny.OMDBClient;
+				PRODUCT_NAME = "OMDB Client";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F4DA3AC24981C9F00E403DC /* Build configuration list for PBXProject "OMDBClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F4DA3C324981CA300E403DC /* Debug */,
+				4F4DA3C424981CA300E403DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F4DA3C524981CA300E403DC /* Build configuration list for PBXNativeTarget "OMDBClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F4DA3C624981CA300E403DC /* Debug */,
+				4F4DA3C724981CA300E403DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F4DA3A924981C9F00E403DC /* Project object */;
+}
